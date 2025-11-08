@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bumfucknowhere</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Pasek górny z logo i nazwą -->
+    <header class="top-bar">
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </a>
+        <a href="index.html" class="site-name">bumfucknowhere</a>
+    </header>
+
+    <!-- Pasek nawigacyjny -->
+    <nav class="nav-bar">
+        <a href="index.html">Strona główna</a>
+        <a href="mods.html">Mody</a>
+        <a href="gamers.html">Gracze</a>
+        <a href="info.html">Informacje</a>
+    </nav>
+
+    <!-- Główna zawartość strony -->
+    <main class="main-content">
+        <div class="left-section">
+            <!-- Status serwera -->
+            <div class="card status-card">
+                <p class="card-title">Status serwera:</p>
+                <p class="status">
+                    <span id="server-icon"></span> 
+                    <span id="server-status">Ładowanie...</span>
+                </p>
+                <p class="last-update">Ostatnie odświeżenie: <span id="last-update">--:--:--</span></p>
+            </div>
+
+            <!-- Data i czas -->
+            <div class="card datetime-card">
+                <p class="hour" id="full-date">--:--:--</p>
+                <p class="day" id="day-name">Ładowanie...</p>
+            </div>
+        </div>
+
+        <!-- Duży kafelek po prawej stronie -->
+        <div class="right-section">
+            <div class="card info-card">
+                <h2>Wszystkie mody</h2>
+
+                <br><hr><br>
+
+                <!-- Lista modów będzie wstawiana tutaj dynamicznie -->
+                <ul id="mods-list" class="mods-list">
+                    <li>Ładowanie modów...</li>
+                </ul>
+            </div>
+        </div>
+        <script src="scripts/mods_list.js"></script>
+    </main>
+
+    <!-- Stopka -->
+    <footer class="footer">
+        <p>Copyright © 2025 - bumfucknowhere</p>
+        <p>by 
+            <a href="https://discordapp.com/users/875626098937958421" target="_blank" class="author-link">Szczerbatek</a>, 
+            <a href="https://discordapp.com/users/701743090662244353" target="_blank" class="author-link">MasnyWojtuś</a>
+        </p>
+    </footer>
+
+    <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
