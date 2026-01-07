@@ -1,2 +1,2 @@
 # PROJEKT W TRACIE BUDOWY
-Wersję można zobaczyć na htttps://bumfucknowhere.pl/
+Wersję można zobaczyć na https://bumfucknowhere.pl/
